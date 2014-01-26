@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="StandardTowerDefenseDemo" package="com.klab.perfectTD.StandardTowerDefenseDemo" version="1.0.0" company="shohei909" />
+	
+	<!-- output -->
+	<app main="Main" file="StandardTowerDefenseDemo" path="bin" />
+	
+	<window background="#000000" fps="60" />
+	<window width="240" height="360" unless="mobile" />
+	<window orientation="portrait" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src/client" />
+	<source path="src/core" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="tweenx" />
+	
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets/img" rename="img" />
+	<!--<assets path="assets/sound" rename="sound" />-->
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>
